@@ -1,0 +1,33 @@
+{
+  "name": "automated-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "openTestBrowser": "npx cypress open --env grepTags=regressao,width=Browser,height=Browser",
+    "runTestBrowser": "npx cypress run --env grepTags=regressao,width=Browser,height=Browser",
+    "openTestMobile": "npx cypress open --env grepTags=regressao,width=Mobile,height=Mobile",
+    "runTestMobile": "npx cypress run --env grepTags=regressao,width=Mobile,height=Mobile",
+    "eslint:fix": "eslint --fix \"cypress/**/*.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.22.11",
+    "@babel/eslint-parser": "7.22.11",
+    "@babel/preset-env": "7.22.14",
+    "@cypress/grep": "4.0.0",
+    "@cypress/webpack-preprocessor": "6.0.0",
+    "@faker-js/faker": "8.0.2",
+    "babel-loader": "9.1.3",
+    "cypress": "13.0.0",
+    "cypress-plugin-steps": "1.1.1",
+    "cypress-plugin-xhr-toggle": "1.0.0",
+    "dayjs": "^1.11.9",
+    "eslint": "8.48.0",
+    "eslint-plugin-cypress": "2.14.0",
+    "pg": "8.11.3",
+    "webpack": "5.88.2"
+  }
+}
